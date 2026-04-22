@@ -3,36 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Fitness</title>
+    <title>Lista de Alunos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Fitness</title>
-</head>
-<body>
-    <header>
-        <h1>Lista de Alunos</h1>
-    </header>
-        <h3>Cadastro</h3>
-        <input>
-        <i class="bi bi-search"></i>
-        <h3>Nome</h3>
-        <input>
-        <i class="bi bi-search"></i>
-    </header>
+<body class="layout">
 
-    <section>
-        <button type ="remover">Remover aluno</button>
-        <button type="adicionar">Adicionar aluno</button>
+    <nav class="menu-lateral">
+        <div class="menu-container">
+        <img src="img/ChatGPT Image 17 de abr. de 2026, 18_37_01.png" alt="logo-alpha">
+      
+        <ul class="menu-lista">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Lista de Funcionários</li>
+                <li class="menu-item">Lista de Alunos</li>
+                <li class="menu-item">Inventários</li>
+                <li class="menu-item">Chamados</li>
+                <li class="menu-item">Finanças</li>
+            </ul>
+
+            <button class="botao botao-sair">Sair</button>
+        </div>
+    </nav>
+
+      <main class="conteudo">
+
+        <header class="cabecalho">
+            <h1 class="titulo-pagina">Lista de Alunos</h1>
+
+            <div class="filtros">
+
+                <div class="grupo-filtro">
+                    <label class="label-filtro">Cadastro</label>
+                    <input class="input input-busca" type="text">
+                </div>
+
+                <div class="grupo-filtro">
+                    <label class="label-filtro">Nome</label>
+                    <input class="input input-busca" type="text">
+                </div>
+
+            </div>
+        </header>
+
+    <section class="acoes">
+        <button class ="remover">Remover aluno</button>
+        <button class="adicionar">Adicionar aluno</button>
     </section>
 
-    <main>
-        <table border="1">
+    <section class="secao-tabela">
+        <table class="tabela-alunos" border="1">
     <tr>
         <th>Cadastro</th>
         <th>Nome Completo</th>
@@ -100,11 +119,8 @@
         <td>(11)96704-9500</td>
     </tr>
 </table>
-
-    </main>
+</section>
 
    
-</body>
-</html>
 </body>
 </html>
