@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Fitness</title>
+    <title>Lista de Alunos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="layout">
+
+    <nav class="menu-lateral">
+        <div class="menu-container">
+        <img src="img/ChatGPT Image 17 de abr. de 2026, 18_37_01.png" alt="logo-alpha">
+      
+        <ul class="menu-lista">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Lista de Funcionários</li>
+                <li class="menu-item">Lista de Alunos</li>
+                <li class="menu-item">Inventários</li>
+                <li class="menu-item">Chamados</li>
+                <li class="menu-item">Finanças</li>
+            </ul>
+
+            <button class="botao botao-sair">Sair</button>
+        </div>
+    </nav>
+
+      <main class="conteudo">
+
+        <header class="cabecalho">
+            <h1 class="titulo-pagina">Lista de Alunos</h1>
+
+            <div class="filtros">
+
+                <div class="grupo-filtro">
+                    <label class="label-filtro">Cadastro</label>
+                    <input class="input input-busca" type="text">
+                </div>
+
+                <div class="grupo-filtro">
+                    <label class="label-filtro">Nome</label>
+                    <input class="input input-busca" type="text">
+                </div>
+
+            </div>
+        </header>
+
+    <section class="acoes">
+        <button class ="remover">Remover aluno</button>
+        <button class="adicionar">Adicionar aluno</button>
+    </section>
+
+    <section class="secao-tabela">
+        <table class="tabela-alunos" border="1">
+    <tr>
+        <th>Cadastro</th>
+        <th>Nome Completo</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+    </tr>
+    <tr>
+        <td>1921921</td>
+        <td>Nicolle Cosmo</td>
+        <td>hshsh@gmail.com</td>
+        <td>(11)93030-6600</td>
+    </tr>
+    <tr>
+        <td>1321922</td>
+        <td>Nicolas Bertacin</td>
+        <td>shsh@gmail.com</td>
+        <td>(11)92762-6900</td>
+    </tr>
+    <tr>
+        <td>1521923</td>
+        <td>Gabriela Ungarette</td>
+        <td>gabu@gmail.com</td>
+        <td>(11)92342-9900</td>
+    </tr>
+    <tr>
+        <td>6721924</td>
+        <td>Matheus Kurachi</td>
+        <td>usra@gmail.com</td>
+        <td>(11)97390-6300</td>
+    </tr>
+    <tr>
+        <td>7621925</td>
+        <td>Thiago Masseto</td>
+        <td>iasse@gmail.com</td>
+        <td>(11)94462-4900</td>
+    </tr>
+    <tr>
+        <td>1441926</td>
+        <td>Giovanna Cochito</td>
+        <td>gicon@gmail.com</td>
+        <td>(11)92762-5900</td>
+    </tr>
+    <tr>
+        <td>1978927</td>
+        <td>Carlos Ribeiro</td>
+        <td>carib@gmail.com</td>
+        <td>(11)98452-7000</td>
+    </tr>
+    <tr>
+        <td>1928928</td>
+        <td>Thiago Ribeiro</td>
+        <td>tirib@gmail.com</td>
+        <td>(11)92444-6500</td>
+    </tr>
+    <tr>
+        <td>1926729</td>
+        <td>Larissa Cavalcanti</td>
+        <td>laval@gmail.com</td>
+        <td>(11)97490-8500</td>
+    </tr>
+    <tr>
+        <td>1881931</td>
+        <td>Beatriz Pereira</td>
+        <td>bepe@gmail.com</td>
+        <td>(11)96704-9500</td>
+    </tr>
+</table>
+</section>
+
+   
 </body>
 </html>
