@@ -182,6 +182,7 @@ body.layout {
     text-align: center;
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+}
 /* inventário  */
 .layout{
     display: grid;
