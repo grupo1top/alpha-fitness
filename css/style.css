@@ -6,6 +6,9 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 746b2342dbaa512dd5f698c2c5896197105db1c5
 .nav .card {
     background-color: var(--secondary-color);
 }
@@ -183,7 +186,10 @@ body.layout {
     text-align: center;
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 746b2342dbaa512dd5f698c2c5896197105db1c5
 /* inventário  */
 .layout{
     display: grid;
@@ -257,5 +263,8 @@ button > i{
 .esquerda > img{
     max-width: 224px;
     max-height: 224px;
+<<<<<<< HEAD
 >>>>>>> 0ca092f738e75cdc11be3ce60186237f99c55209
+=======
+>>>>>>> 746b2342dbaa512dd5f698c2c5896197105db1c5
 }
