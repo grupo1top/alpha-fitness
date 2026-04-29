@@ -75,14 +75,38 @@ body.layout {
 
 .botao-sair {
     margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
     width: 160px;
     height: 50px;
+
     border: none;
     border-radius: 50px;
+
     background-color: var(--text-color-secondary);
     color: var(--secondary-color);
+
     font-weight: var(--weight-bold);
+    font-size: 14px;
+
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao-sair:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
+.botao-sair i {
+    font-size: 24px;
 }
 
 
@@ -183,6 +207,7 @@ body.layout {
     color: var(--text-color-primary);
     background-color: var(--bg-color);
 }
+
 /* inventário  */
 .layout{
     display: grid;
@@ -223,9 +248,10 @@ button{
     background-color: #680B0B;
     color: #ffff;
     border-radius: 5px ;
-    width: 170px;
-    height: 30px;
+    width: 200px;
+    height: 33px;
     gap: 10px;
+    white-space: nowrap;
 
 }
 .topo > input{
