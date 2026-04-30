@@ -86,28 +86,6 @@
     color: var(--text-color-secondary);
 }
 
-.tabela-alunos {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: var(--font-secondary);
-}
-
-.tabela-alunos th {
-    background-color: #eaeaea;
-    color: var(--text-color-primary);
-    padding: 12px;
-    font-weight: var(--weight-light);
-}
-
-.tabela-alunos td {
-    padding: 10px;
-    text-align: center;
-    color: var(--text-color-primary);
-    background-color: var(--bg-color);
-}
 
 /* inventário  */
 
@@ -163,6 +141,7 @@ button > i{
 .botoes{
     display: flex;
     gap: 10px;
+   
 
 
 }
@@ -202,4 +181,9 @@ button > i{
     text-align: center;
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+}
+
+.secao-tabela{
+    width: 90%;          /* controla o tamanho da tabela */
+    margin: 0 auto; 
 }
