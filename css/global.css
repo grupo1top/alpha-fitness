@@ -18,7 +18,7 @@
 
 :root {
     --bg-color: #F4F4F4;
-    --secondary-color:#640000;
+    --secondary-color: #640000;
     --text-color-primary: #000000;
     --text-color-secondary: #FFFFFF;
     --text-color-tertiary: #640000;
@@ -34,7 +34,7 @@
     --weight-light: 300;
     --weight-regular: 400;
     --weight-semibold: 600;
-    --weight-bold:700;
+    --weight-bold: 700;
     --weight-extrabold: 800;
     --italic: italic;
 
@@ -82,12 +82,18 @@ h2 {
 }
 
 .info_lista {
-    font-weight: var(--weight-semibold) ;
-    color:var(--text-color-secondary);
+    font-weight: var(--weight-semibold);
+    color: var(--text-color-secondary);
 }
 
 .info_dashboard {
     font-family: var(--font-secondary);
     font-weight: var(--weight-light);
     color: var(--text-color-primary);
+}
+
+.linha {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
 }
