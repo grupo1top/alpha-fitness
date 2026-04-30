@@ -855,8 +855,7 @@ button > i{
     .folha-pagination nav {
         flex-wrap: wrap;
     }
-
-    }
+}
 
 .secao-tabela{
     width: 90%;          /* controla o tamanho da tabela */
