@@ -215,14 +215,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /* lista de alunos  */
 .menu-lista {
     list-style: none;
@@ -305,7 +297,7 @@
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
-    border-radius: px;
+    border-radius: 20px;
 }
 
 .direita {
@@ -363,15 +355,15 @@ button > i{
     font-size: 20px;
 }
 
-.botoes{
+.botoes {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;       /* ADICIONE ISSO: impede que pulem linha */
+    justify-content: flex-start; /* Alinha no começo da página */
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 18px;
-    font-weight: var(--weight-semibold);
-;
-
 }
 
 .esquerda > a{
@@ -421,7 +413,26 @@ button > i{
     font-weight: var(--weight-extra-light);   
 }
 
+.secao-tabela{
+    width: 90%;          /* controla o tamanho da tabela */
+    margin: 0 auto; 
+}
 
+.green-circle-fill{
+    display: inline-flex;
+    color: #43BC8B;
+}
+
+.red-circle-fill{
+    display: inline-flex;
+    color: #FF0000;
+}
+
+.yellow-circle-fill{
+    display: inline-flex;
+    color: #FBBD22;
+  
+}
 
 /* folha de pagamento */
 .folha-page {
@@ -878,26 +889,7 @@ button > i{
     font-family: var(--font-secondary)
 }
 
-.secao-tabela{
-    width: 90%;          /* controla o tamanho da tabela */
-    margin: 0 auto; 
-}
 
-.green-circle-fill{
-    display: inline-flex;
-    color: #43BC8B;
-}
-
-.red-circle-fill{
-    display: inline-flex;
-    color: #FF0000;
-}
-
-.yellow-circle-fill{
-    display: inline-flex;
-    color: #FBBD22;
-  
-}
 
 
 .tabela-funcionarios-alunos {
