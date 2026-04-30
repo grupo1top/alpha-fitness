@@ -239,9 +239,6 @@ body.layout {
 }
 
 button{
-    display: flex;
-    background-color: #680B0B;
-    color: #ffff;
     border-radius: 5px ;
     width: 200px;
     height: 33px;

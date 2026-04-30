@@ -1,1 +1,7 @@
-script
+button{
+    display: flex;
+    background-color: #680B0B;
+    color: #ffff;
+    border: none;
+
+}
