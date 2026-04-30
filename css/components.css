@@ -30,7 +30,7 @@
 }
 
 .botao-sair {
-    margin-top: auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +94,7 @@
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
+    border-radius: px;
 }
 
 .direita {
@@ -172,11 +173,9 @@ button > i{
 
 }
 
-.esquerda > img{
-    display: flex;
+.esqueda > img{
     max-width: 224px;
-    max-height: 224px;
-
+    height: 224px;
 }
 
 /* tabela  */
