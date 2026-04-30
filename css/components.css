@@ -204,12 +204,7 @@ body.layout {
 }
 
 /* inventário  */
-.layout{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 100vh;
 
-}
 
 .esquerda {
     background-color: var(--secondary-color);
@@ -277,13 +272,14 @@ button > i{
 }
 
 .tabela-patrimonio {
+    border:rgba(0, 0, 0, 0.1);
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
     font-family: var(--font-secondary);
-    margin-left: 40px;
+  
     
 }
 
