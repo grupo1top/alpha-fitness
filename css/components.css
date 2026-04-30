@@ -113,7 +113,7 @@
 
 .topo {
     display: flex;
-    justify-content: space-between; /* joga um pra cada lado */
+    justify-content: space-between; 
     align-items: center;
     margin-top: 50px;
     margin-left: 18px;
