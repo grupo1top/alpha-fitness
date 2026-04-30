@@ -1,3 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #111827;
+}
+
+.head {
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.head h1 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.head h2 {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.content {
+    padding: 24px 32px;
+}
+
+.botoes {
+    display: inline-block;
+}
+
+.search-txt {
+    width: 240px;
+    height: 38px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0 14px;
+    outline: none;
+}
+
+.botao-rigth {
+    float: right;
+}
+
+.botao-rigth button {
+    height: 38px;
+    padding: 0 18px;
+    border: 1px solid #ffffff;
+    background: #640000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cards-pagamento {
+    margin-top: 28px;
+}
+
+.card-um,
+.card-dois,
+.card-tres,
+.card-quatro {
+    width: 23%;
+    height: 110px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 1.5%;
+    padding: 22px;
+    vertical-align: top;
+}
+
+.card-um h3,
+.card-dois h3,
+.card-tres h3,
+.card-quatro h3 {
+    font-size: 13px;
+    color: #4b5563;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card-um::after {
+    content: "R$ 485.750\A +8.2% vs mês anterior";
+    white-space: pre;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-dois::after {
+    content: "R$ 97.150\A 20% do total bruto";
+    white-space: pre;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-tres::after {
+    content: "R$ 388.600\A +6.5% vs mês anterior";
+    white-space: pre;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-quatro::after {
+    content: "127\A 3 novos este mês";
+    white-space: pre;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-payroll {
+    margin-top: 32px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    font-size: 17px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.processed,
+.paid {
+    background: #d1fae5;
+    color: #00a86b;
+}
+
+.pending {
+    background: #fff4d6;
+    color: #f59e0b;
+}
+
+.menu-btn,
+.action {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.payroll-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.payroll-table thead {
+    background: #f9fafb;
+}
+
+.payroll-table th {
+    text-align: left;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+    padding: 16px 20px;
+}
+
+.payroll-table td {
+    padding: 18px 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    background: #111;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee span {
+    display: block;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.discount {
+    color: #ef4444;
+}
+
+.net {
+    color: #00a86b;
+    font-weight: bold;
+}
+
+.card-footer {
+    padding: 9px 11px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer p {
+    color: #6b7280;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
 button{
     display: flex;
     background-color: #680B0B;
