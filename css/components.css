@@ -120,21 +120,31 @@
 }
 
 button{
-    border-radius: 5px ;
+    border-radius: 10px ;
     width: 200px;
     height: 33px;
     gap: 10px;
     white-space: nowrap;
 
 }
-.topo > input{
+
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 30px;
+}
+.barra-pesquisa > input{
     margin-right: 10px;
     background-color: #D9D9D9;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    height: 25px;
-    width: 200px ;
+    height: 30px;
+    width: 100% ;
 }
+
 
 button > i{
     color: black;
@@ -155,11 +165,18 @@ button > i{
 .esquerda > a{
     text-decoration: none;
     color: var(--text-color-secondary);
+    font-family: var(--font-family);
+    font-weight: var(--weight-light);
+    margin-left: 20px;
+    line-height: 2.5;        /* espaço entre linhas */
+
 }
 
 .esquerda > img{
+    display: flex;
     max-width: 224px;
     max-height: 224px;
+
 }
 
 /* tabela  */
@@ -181,7 +198,7 @@ button > i{
     color: var(--text-color-primary);
     padding: 12px;
     font-weight: var(--weight-light);
-    font-family: var(--font-secondary)
+  
 
 }
 
@@ -191,10 +208,28 @@ button > i{
     text-align: center;
     color: var(--text-color-primary);
     background-color: var(--bg-color);
-    font-family: var(--font-secondary)
+    font-weight: var(--weight-extra-light);   
 }
 
 .secao-tabela{
     width: 90%;          /* controla o tamanho da tabela */
     margin: 0 auto; 
 }
+
+.green-circle-fill{
+    display: inline-flex;
+    color: #43BC8B;
+}
+
+.red-circle-fill{
+    display: inline-flex;
+    color: #FF0000;
+}
+
+.yellow-circle-fill{
+    display: inline-flex;
+    color: #FBBD22;
+  
+}
+
+

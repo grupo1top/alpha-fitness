@@ -21,6 +21,7 @@
             <a href="inventario-patrimonios.html">inventário de patrimônios</a>
             <a href="chamados.html">Chamados</a>
             <a href="dashboard-financas.html">Finanças</a>
+            <a href="folha-pagamento.html">Folha de pagamento</a>
 
 
 
@@ -30,7 +31,10 @@
             <div class="header">
                 <div class="topo">
                     <h1>Inventário de Patrimônios</h1>
-                    <input type="text"  placeholder="Pesquisar patrimônio">
+                    <div class="barra-pesquisa">
+                        <input type="text"  placeholder="Pesquisar patrimônio">
+                        <i class="bi bi-search"></i>
+                    </div>
                 </div>
             
             <div class="botoes">
@@ -54,6 +58,12 @@
         </div>
         <section class="secao-tabela">
             <table class="tabela-patrimonio" border="1">
+                 <colgroup>
+                    <col class="col-numero">
+                    <col class="col-nome">
+                    <col class="col-quantidade">
+                    <col class="col-status">
+                </colgroup>
                 <tr> 
                     <th>Nº</th>
                     <th>Nome </th>
@@ -64,55 +74,100 @@
                     <td>96</td>
                     <td>Esteira ergométrica</td>
                     <td>10</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>97</td>
                     <td>Bicicleta ergométrica</td>
                     <td>10</td>
-                    <td>Inutilizável</td>
+                    <td>
+                        <div class="red-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Inutilizável
+                    </td>
                 </tr>
                 <tr>
                     <td>98</td>
                     <td>Leg Press</td>
                     <td>5</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>100</td>
                     <td> Supino reto</td>
                     <td>4</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>101</td>
                     <td>Máquina de puxada </td>
                     <td>4</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>102</td>
                     <td>Desinfetante</td>
                     <td>20</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>104</td>
                     <td>Desktop Dell OptiPlex</td>
                     <td>3</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
                 <tr>
                     <td>105</td>
                     <td>Notebook Lenovo </td>
                     <td>2</td>
-                    <td>Manutenção</td>
+                    <td>
+                        <div class="yellow-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Manutenção
+                    </td>
                 </tr>
                 <tr>
                     <td>106</td>
                     <td>iMac Apple</td>
                     <td>1</td>
-                    <td>Disponível</td>
+                    <td>
+                        <div class="green-circle-fill">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        Disponível
+                    </td>
                 </tr>
             
             </table>
