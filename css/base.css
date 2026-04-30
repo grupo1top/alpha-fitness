@@ -1,1 +1,17 @@
-script
+.titulo-pagina {
+    font-size: var(--font-size-heading1);
+    font-weight: var(--weight-semibold);
+    color: var(--text-color-primary);
+    margin-bottom: 20px;
+}
+
+.label-filtro {
+    font-family: var(--font-secondary);
+    color: var(--text-color-tertiary);
+    margin-bottom: 5px;
+}
+
+.menu-container img {
+    width: 150px;
+    margin-bottom: 40px;
+}
