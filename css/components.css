@@ -116,6 +116,8 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    margin-top: 50px;
+    margin-left: 18px;
 }
 
 button{
@@ -137,13 +139,17 @@ button{
 
 button > i{
     color: black;
+    font-size: 20px;
 }
 
 .botoes{
     display: flex;
     gap: 10px;
-   
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    font-weight: var(--weight-semibold);
+;
 
 }
 
@@ -156,6 +162,8 @@ button > i{
     max-width: 224px;
     max-height: 224px;
 }
+
+/* tabela  */
 
 .tabela-patrimonio {
     border:rgba(0, 0, 0, 0.1);
@@ -170,10 +178,12 @@ button > i{
 }
 
 .tabela-patrimonio th {
-    background-color: #eaeaea;
+    background-color: #EAEAEA;
     color: var(--text-color-primary);
     padding: 12px;
     font-weight: var(--weight-light);
+    font-family: var(--font-secondary)
+
 }
 
 
@@ -182,6 +192,7 @@ button > i{
     text-align: center;
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+    font-family: var(--font-secondary)
 }
 
 .secao-tabela{

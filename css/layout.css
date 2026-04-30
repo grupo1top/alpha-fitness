@@ -3,6 +3,12 @@ button{
     background-color: #680B0B;
     color: #ffff;
     border: none;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    display: flex;
+    font-family: var(--font-family);
+
+
 
 }
 
