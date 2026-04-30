@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Alunos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
 </head>
 <body class="layout">
 
@@ -32,23 +37,37 @@
 
             <div class="filtros">
 
-                <div class="grupo-filtro">
-                    <label class="label-filtro">Cadastro</label>
+                 <div class="grupo-filtro">
+                    <div class="label-com-icone">
+                        <label class="label-filtro">Cadastro</label>
+                        <i class="bi bi-search"></i>
+                    </div>
+
                     <input class="input input-busca" type="text">
                 </div>
 
-                <div class="grupo-filtro">
-                    <label class="label-filtro">Nome</label>
+                 <div class="grupo-filtro">
+                                    <div class="label-com-icone">
+                        <label class="label-filtro">Nome</label>
+                        <i class="bi bi-search"></i>
+                    </div>
+
                     <input class="input input-busca" type="text">
                 </div>
 
             </div>
         </header>
 
-    <section class="acoes">
-        <button class ="remover">Remover aluno</button>
-        <button class="adicionar">Adicionar aluno</button>
-    </section>
+   <section class="acoes">
+            <button class="botao remover">
+                Remover Aluno
+                <i class="bi bi-plus-circle-fill"></i>
+            </button>
+            <button class="botao adicionar">
+                Adicionar Aluno
+                <i class="bi bi-plus-circle-fill"></i>
+            </button>
+        </section>
 
     <section class="secao-tabela">
         <table class="tabela-alunos" border="1">
@@ -124,3 +143,4 @@
    
 </body>
 </html>
+
