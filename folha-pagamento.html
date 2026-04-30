@@ -3,10 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Fitness</title>
+    <title>Folha de Pagamento | Alpha Fitness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="folha-page">
+    <header class="folha-header">
+        <div>
+            <h1>Folha de Pagamento</h1>
+            <p>Gerencie os pagamentos dos funcionarios</p>
+        </div>
+    </header>
+
+    <main class="folha-main">
+        <section class="folha-toolbar" aria-label="Acoes da folha de pagamento">
+            <label class="folha-search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <input type="search" id="buscaFuncionario" placeholder="Buscar funcionario...">
+            </label>
+
+            <div class="folha-actions">
+                <button class="btn-secondary" type="button" id="btnRelatorio">
+                    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>
+                    Relatorio
+                </button>
+                <button class="btn-primary" type="button" id="btnProcessar">
+                    <i class="bi bi-plus-lg" aria-hidden="true"></i>
+                    Processar Folha
+                </button>
+            </div>
+        </section>
+
+        <section class="folha-metricas" aria-label="Resumo da folha">
+            <article class="metrica-card">
+                <div>
+                    <span>Total Bruto</span>
+                    <strong>R$ 485.750</strong>
+                    <small class="positivo">+8.2% vs mes anterior</small>
+                </div>
+                <i class="bi bi-cash-coin metrica-icon roxo" aria-hidden="true"></i>
+            </article>
+
+            <article class="metrica-card">
+                <div>
+                    <span>Descontos</span>
+                    <strong>R$ 97.150</strong>
+                    <small class="alerta">20% do total bruto</small>
+                </div>
+                <i class="bi bi-dash-circle-fill metrica-icon laranja" aria-hidden="true"></i>
+            </article>
+
+            <article class="metrica-card">
+                <div>
+                    <span>Liquido</span>
+                    <strong>R$ 388.600</strong>
+                    <small class="positivo">+6.5% vs mes anterior</small>
+                </div>
+                <i class="bi bi-currency-dollar metrica-icon verde" aria-hidden="true"></i>
+            </article>
+
+            <article class="metrica-card">
+                <div>
+                    <span>Funcionarios</span>
+                    <strong>127</strong>
+                    <small class="info-azul">3 novos este mes</small>
+                </div>
+                <i class="bi bi-people-fill metrica-icon azul" aria-hidden="true"></i>
+            </article>
+        </section>
+
+        <section class="folha-card">
+            <div class="folha-card-header">
+                <h2>Folha de Pagamento - Janeiro 2024</h2>
+                <div class="folha-card-status">
+                    <span>Processada</span>
+                    <button type="button" aria-label="Mais opcoes">
+                        <i class="bi bi-three-dots-vertical" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="folha-table-wrap">
+                <table class="folha-table">
+                    <thead>
+                        <tr>
+                            <th>Funcionario</th>
+                            <th>Cargo</th>
+                            <th>Departamento</th>
+                            <th>Salario<br>Base</th>
+                            <th>Descontos</th>
+                            <th>Liquido</th>
+                            <th>Status</th>
+                            <th>Acoes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaFuncionarios">
+                        <tr>
+                            <td>
+                                <div class="funcionario-cell">
+                                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Joao Santos</strong>
+                                        <span>joao@empresa.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>atendente</td>
+                            <td>TI</td>
+                            <td>R$ 8.500,00</td>
+                            <td class="valor-desconto">R$ 1.700,00</td>
+                            <td class="valor-liquido">R$ 6.800,00</td>
+                            <td><span class="badge pago">Pago</span></td>
+                            <td>
+                                <div class="table-actions">
+                                    <button type="button" aria-label="Visualizar"><i class="bi bi-eye-fill"></i></button>
+                                    <button type="button" aria-label="Baixar"><i class="bi bi-download"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="funcionario-cell">
+                                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Ana Costa</strong>
+                                        <span>ana@empresa.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Marketing</td>
+                            <td>Marketing</td>
+                            <td>R$ 7.200,00</td>
+                            <td class="valor-desconto">R$ 1.440,00</td>
+                            <td class="valor-liquido">R$ 5.760,00</td>
+                            <td><span class="badge pendente">Pendente</span></td>
+                            <td>
+                                <div class="table-actions">
+                                    <button type="button" aria-label="Visualizar"><i class="bi bi-eye-fill"></i></button>
+                                    <button type="button" aria-label="Baixar"><i class="bi bi-download"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="funcionario-cell">
+                                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Carlos Lima</strong>
+                                        <span>carlos@empresa.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>gerente</td>
+                            <td>Vendas</td>
+                            <td>R$ 4.500,00</td>
+                            <td class="valor-desconto">R$ 900,00</td>
+                            <td class="valor-liquido">R$ 3.600,00</td>
+                            <td><span class="badge pago">Pago</span></td>
+                            <td>
+                                <div class="table-actions">
+                                    <button type="button" aria-label="Visualizar"><i class="bi bi-eye-fill"></i></button>
+                                    <button type="button" aria-label="Baixar"><i class="bi bi-download"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="funcionario-cell">
+                                    <i class="bi bi-person-circle" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Lucia Ferreira</strong>
+                                        <span>lucia@empresa.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>RH</td>
+                            <td>RH</td>
+                            <td>R$ 5.800,00</td>
+                            <td class="valor-desconto">R$ 1.160,00</td>
+                            <td class="valor-liquido">R$ 4.640,00</td>
+                            <td><span class="badge atrasado">Atrasado</span></td>
+                            <td>
+                                <div class="table-actions">
+                                    <button type="button" aria-label="Visualizar"><i class="bi bi-eye-fill"></i></button>
+                                    <button type="button" aria-label="Baixar"><i class="bi bi-download"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="folha-pagination">
+                <p>Mostrando 1-4 de 15 funcionarios</p>
+                <nav aria-label="Paginacao">
+                    <button type="button">Anterior</button>
+                    <button type="button" class="active">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">Proximo</button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
