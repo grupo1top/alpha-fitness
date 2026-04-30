@@ -86,36 +86,9 @@
     color: var(--text-color-secondary);
 }
 
-.tabela-alunos {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: var(--font-secondary);
-}
-
-.tabela-alunos th {
-    background-color: #eaeaea;
-    color: var(--text-color-primary);
-    padding: 12px;
-    font-weight: var(--weight-light);
-}
-
-.tabela-alunos td {
-    padding: 10px;
-    text-align: center;
-    color: var(--text-color-primary);
-    background-color: var(--bg-color);
-}
 
 /* inventário  */
-.layout{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 100vh;
 
-}
 
 .esquerda {
     background-color: var(--secondary-color);
@@ -168,6 +141,7 @@ button > i{
 .botoes{
     display: flex;
     gap: 10px;
+   
 
 
 }
@@ -183,13 +157,14 @@ button > i{
 }
 
 .tabela-patrimonio {
+    border:rgba(0, 0, 0, 0.1);
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
     font-family: var(--font-secondary);
-    margin-left: 40px;
+  
     
 }
 
@@ -208,6 +183,7 @@ button > i{
     background-color: var(--bg-color);
 }
 
-.secao-tabela {
-    margin-top: 10px;
+.secao-tabela{
+    width: 90%;          /* controla o tamanho da tabela */
+    margin: 0 auto; 
 }
