@@ -77,6 +77,7 @@
     text-align: center;
     margin: 0 auto;
     position: relative;
+    color: white;
 
     width: 220px;
     height: 45px;
@@ -88,7 +89,7 @@
 .cadastrar-button {
 
 
-    width: 280px;
+    width: 200px;
     height: 60px;
     top: 140px;
     position: relative;
@@ -443,3 +444,56 @@ button > i{
     margin: 0 auto; 
 }
 
+.titulo-cadastro {
+
+    font-family: REM;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    text-align: center;
+    position: relative;
+
+    width: 380px;
+    height: 45px;
+    margin: 0 auto;
+    top: 140px;
+    
+
+}
+
+.subtitulo-cadastro {
+
+    font-family: Mitr;
+    font-weight: 275;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    
+
+    width: 260px;
+    height: 45px;
+    top: 140px;
+
+}
+
+.entrar-button {
+
+
+    width: 200px;
+    height: 60px;
+    top: 140px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 5px solid #FFFFFF;
+
+    background-color: #640000;
+
+
+}
