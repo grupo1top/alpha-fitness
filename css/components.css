@@ -215,6 +215,8 @@
 
 
 /* lista de alunos  */
+
+
 .menu-lista {
     list-style: none;
     width: 100%;
@@ -224,21 +226,40 @@
     gap: 20px;
 }
 
+.menu-container {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-container i {
+    font-size: 2rem; 
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.menu-container img {
+    width: 160px; /* aumenta o tamanho */
+    margin-top: -50px; /* sobe a imagem */
+}
+
 .menu-item {
     font-family: var(--font-secondary);
     font-size: var(--font-size-paragraph);
     font-weight: var(--weight-light);
     cursor: pointer;
+    text-decoration: none;  /* remove o sublinhado */
+    color: inherit;         
 }
 
+
 .botao-sair {
-    margin: auto;
-    display: flex-end;
+    margin-top: 20px;
+    display: flex;               
     align-items: center;
     justify-content: center;
     gap: 8px;
     width: 220px;
-    height: 50px;
+    height: 150px;
     border: none;
     border-radius: 50px;
     background-color: var(--text-color-secondary);
@@ -412,7 +433,37 @@ button > i{
     font-weight: var(--weight-extra-light);   
 }
 
+.tabela-funcionarios-alunos {
+    border:rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--font-family);
+  
+    
+}
 
+.tabela-funcionarios-alunos th {
+    background-color: #EAEAEA;
+    color: var(--text-color-primary);
+    padding: 12px;
+    font-weight: var(--weight-light);
+    font-family: var(--font-family);
+  
+
+}
+
+
+.tabela-funcionarios-alunos td {
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+    font-weight: var(--weight-extra-light); 
+    font-family: var(--font-family);  
+}
 
 /* folha de pagamento */
 .folha-page {
