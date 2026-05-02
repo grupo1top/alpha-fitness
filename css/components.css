@@ -253,10 +253,8 @@
 
 
 .botao-sair {
-    margin: auto;
-    display: flex;               
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    margin-left: 50px;
     gap: 8px;
     width: 270px;
     height: 70px;
@@ -292,7 +290,6 @@
 
 .remover,
 .adicionar {
-    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     font-weight: var(--weight-semibold);
@@ -305,6 +302,7 @@
 }
 
 .adicionar {
+    margin-right: 62px ;
     background-color: var(--secondary-color);
     color: var(--text-color-secondary);
 }
@@ -318,7 +316,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
-
+    height: 100vh; /* ocupa a tela toda */
 }
 
 .direita {
@@ -399,9 +397,9 @@ button > i{
 
 }
 
-.esquerda > img{
-    max-width: 224px;
-    height: 224px;
+.logo > img{
+    max-width: 150px;
+    height: 150px;
 }
 
 .logo{
@@ -988,7 +986,7 @@ button > i{
 }
 
 .secao-tabela-fun-alu{
-    width: 100%;          /* controla o tamanho da tabela */
+    width: 90%;          /* controla o tamanho da tabela */
     margin: 0 auto; 
 }
 

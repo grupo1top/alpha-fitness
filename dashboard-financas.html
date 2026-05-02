@@ -8,35 +8,28 @@
 </head>
 
 <body>
-    <div class="dashboard-container">
+    <div class="layout">
 
         <!-- Sidebar -->
-        <aside class="dashboard-sidebar">
-            <div class="dashboard-top">
-
-                <div class="dashboard-menu-icon">☰</div>
-
-                <div class="dashboard-logo">
-                    <img src="img/ChatGPT Image 26 de mar. de 2026, 15_57_00 2.png">
-                </div>
-
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="lista-funcionarios.html">Lista de Funcionários</a>
-                    <a href="lista-alunos.html">Lista de Alunos</a>
-                    <a href="inventario-patrimonios.html">Inventário</a>
-                    <a href="chamados.html">Chamados</a>
-                    <a href="dashboard-financas.html">Finanças</a>
-                    <a href="folha-pagamento.html">Folha de Pagamento</a>
-                </nav>
-
+        <div class="esquerda">
+            <i class="bi bi-list menu-icon"></i>
+            <div class="logo">
+                <img src="img/ChatGPT Image 26 de mar. de 2026, 15_57_00 2.png">
             </div>
+           
+            <a href="index.html">Home</a>
+            <a href="lista-funcionarios.html">Lista de Funcionários</a>
+            <a href="lista-alunos.html">Lista de Alunos</a>
+            <a href="inventario-patrimonios.html">Inventário</a>
+            <a href="chamados.html">Chamados</a>
+            <a href="dashboard-financas.html">Finanças</a>
+            <a href="folha-pagamento.html">Folha de Pagamento</a>
 
-            <button class="dashboard-logout">SAIR</button>
-        </aside>
+            <button type="button" class="botao botao-sair">SAIR</button>
+        </div>
 
         <!-- Conteúdo -->
-        <main class="dashboard-content">
+        <div class="direita">
             <h1>Dashboard Finanças</h1>
 
             <!-- Cards -->
@@ -136,7 +129,7 @@
 
             </div>
 
-        </main>
+        </div>
 
     </div>
 </body>
