@@ -254,7 +254,8 @@
 
 .botao-sair {
     margin-top: auto;
-    margin-left: 50px;
+    margin-bottom: 30px; /* distância do rodapé */
+    align-self: center; /* centra horizontalmente dentro do flex column */
     gap: 8px;
     width: 270px;
     height: 70px;
@@ -376,7 +377,7 @@ button > i{
     font-size: 20px;
 }
 
-.botoes{
+.botoes {
     display: flex;
     display: inline-flex;
     gap: 10px;

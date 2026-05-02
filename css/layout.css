@@ -246,15 +246,13 @@ body {
 }
 button{
     display: flex;
+
     background-color: #680B0B;
     color: #ffff;
     border: none;
     justify-content: center; /* horizontal */
     align-items: center;     /* vertical */
-    display: flex;
     font-family: var(--font-family);
-
-
 
 }
 
@@ -279,6 +277,12 @@ button{
 
 
 
+
+.layout{
+    display: grid;
+    flex-direction: row; 
+    grid-template-columns: 1fr 4fr; 
+}
 
 * {
     margin: 0;
