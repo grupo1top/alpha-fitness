@@ -1,6 +1,6 @@
 /*lista de alunos e funcionarios*/
 
-@media (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 899px) {
     .menu-lateral {
         width: 240px;
     }
@@ -10,7 +10,7 @@
     }
 
     .botao-sair {
-        width: 190px;
+        width: 200px;
         font-size: 17px;
     }
 
@@ -18,7 +18,7 @@
         gap: 24px;
     }
 
-    /* Reduz o tamanho dos textos */
+
     body {
         font-size: 14px;
     }
@@ -30,10 +30,31 @@
     p, span, a, li, label, input, button {
         font-size: 0.875rem;
     }
+
+    .botao {
+        font-size: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .botao i {
+        font-size: 1.4rem;
+    }
+
+     .input-busca   {
+        width: 180px;
+        height: 40px;
+        display: inline-flex;
+    }
+
+   
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     body.layout {
         flex-direction: column;
     }
@@ -51,15 +72,27 @@
     }
     
     .menu-container {
-        padding: 20px 16px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 20px 16px;
+}
 
-     .menu-container > img {
+    .menu-container > img {
         width: 112px;
         height: 112px;
-        align-self: flex-start;
-
+        margin-top: 3px;
     }
+
+    .menu-container i {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+    }
+
 
     .conteudo {
         padding: 24px 16px;

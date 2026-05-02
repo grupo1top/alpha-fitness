@@ -214,8 +214,9 @@
 }
 
 
-
 /* lista de alunos  */
+
+
 .menu-lista {
     list-style: none;
     width: 100%;
@@ -225,21 +226,38 @@
     gap: 20px;
 }
 
+.menu-container {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-container i {
+    font-size: 2rem; 
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.menu-container img {
+    width: 160px; /* aumenta o tamanho */
+    margin-top: -50px; /* sobe a imagem */
+}
+
 .menu-item {
     font-family: var(--font-secondary);
     font-size: var(--font-size-paragraph);
     font-weight: var(--weight-light);
     cursor: pointer;
+    text-decoration: none;  /* remove o sublinhado */
+    color: inherit;         
 }
 
+
 .botao-sair {
-    margin: auto;
-    display: flex-end;
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    margin-left: 50px;
     gap: 8px;
-    width: 220px;
-    height: 50px;
+    width: 270px;
+    height: 70px;
     border: none;
     border-radius: 50px;
     background-color: var(--text-color-secondary);
@@ -272,7 +290,6 @@
 
 .remover,
 .adicionar {
-    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     font-weight: var(--weight-semibold);
@@ -285,6 +302,7 @@
 }
 
 .adicionar {
+    margin-right: 62px ;
     background-color: var(--secondary-color);
     color: var(--text-color-secondary);
 }
@@ -297,7 +315,8 @@
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
+    height: 100vh; /* ocupa a tela toda */
 }
 
 .direita {
@@ -347,6 +366,8 @@ button{
     border: none;
     height: 30px;
     width: 100% ;
+    font-family: var(--font-family);
+    font-weight: var(--weight-semibold);
 }
 
 
@@ -357,13 +378,13 @@ button > i{
 
 .botoes {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;       /* ADICIONE ISSO: impede que pulem linha */
-    justify-content: flex-start; /* Alinha no começo da página */
+    display: inline-flex;
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 18px;
+    font-weight: var(--weight-semibold);
+
 }
 
 .esquerda > a{
@@ -376,9 +397,22 @@ button > i{
 
 }
 
-.esqueda > img{
-    max-width: 224px;
-    height: 224px;
+.logo > img{
+    max-width: 150px;
+    height: 150px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda > i {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 /* tabela  */
@@ -400,7 +434,7 @@ button > i{
     color: var(--text-color-primary);
     padding: 12px;
     font-weight: var(--weight-light);
-  
+    font-family: var(--font-secondary);
 
 }
 
@@ -411,27 +445,40 @@ button > i{
     color: var(--text-color-primary);
     background-color: var(--bg-color);
     font-weight: var(--weight-extra-light);   
+    font-family: var(--font-secondary);
+
 }
 
-.secao-tabela{
-    width: 90%;          /* controla o tamanho da tabela */
-    margin: 0 auto; 
-}
-
-.green-circle-fill{
-    display: inline-flex;
-    color: #43BC8B;
-}
-
-.red-circle-fill{
-    display: inline-flex;
-    color: #FF0000;
-}
-
-.yellow-circle-fill{
-    display: inline-flex;
-    color: #FBBD22;
+.tabela-funcionarios-alunos {
+    border:rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--font-family);
   
+    
+}
+
+.tabela-funcionarios-alunos th {
+    background-color: #EAEAEA;
+    color: var(--text-color-primary);
+    padding: 12px;
+    font-weight: var(--weight-light);
+    font-family: var(--font-family);
+  
+
+}
+
+
+.tabela-funcionarios-alunos td {
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+    font-weight: var(--weight-extra-light); 
+    font-family: var(--font-family);  
 }
 
 /* folha de pagamento */
@@ -886,10 +933,27 @@ button > i{
         flex-wrap: wrap;
     }
 }
-    font-family: var(--font-secondary)
+
+.secao-tabela{
+    width: 90%;          /* controla o tamanho da tabela */
+    margin: 0 auto; 
 }
 
+.green-circle-fill{
+    display: inline-flex;
+    color: #43BC8B;
+}
 
+.red-circle-fill{
+    display: inline-flex;
+    color: #FF0000;
+}
+
+.yellow-circle-fill{
+    display: inline-flex;
+    color: #FBBD22;
+  
+}
 
 
 .tabela-funcionarios-alunos {
@@ -922,7 +986,7 @@ button > i{
 }
 
 .secao-tabela-fun-alu{
-    width: 100%;          /* controla o tamanho da tabela */
+    width: 90%;          /* controla o tamanho da tabela */
     margin: 0 auto; 
 }
 
@@ -978,4 +1042,132 @@ button > i{
     background-color: #640000;
 
 
+}
+
+.home-header {
+    background-color: #640000;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.home-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 250px;
+}
+
+.home-pesquisa i {
+    color: #640000;
+}
+
+.home-pesquisa input {
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    color: #640000;
+}
+
+.home-pesquisa input::placeholder {
+    color: #640000;
+}
+
+.home-header-logo {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-sair {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.home-body {
+    background-image: url("../img/imagem-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body-home {
+    background-color: white;
+    width: calc(100% - 80px);
+    max-width: 1200px;
+    min-height: calc(100vh - 170px);
+    margin: 20px auto 0;
+    border-radius: 16px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.home-cards {
+    width: min(900px, calc(100% - 80px));
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-card {
+    background: #ffffff;
+    border: 1px solid #1f1f1f;
+    border-radius: 14px;
+    padding: 24px;
+    min-height: 150px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.home-card i {
+    font-size: 28px;
+    color: #640000;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.home-card h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #111827;
+}
+
+.home-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b5563;
 }
