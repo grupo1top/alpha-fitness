@@ -1,168 +1,130 @@
 /*lista de alunos e funcionarios*/
 
 @media (min-width: 600px) and (max-width: 899px) {
+    /* Tablet layout adjustments */
     .menu-lateral {
-        width: 240px;
+        width: 220px;
     }
 
     .conteudo {
-        padding: 30px 24px;
+        padding: 28px 20px;
     }
 
     .botao-sair {
         width: 200px;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .filtros {
-        gap: 24px;
+        gap: 20px;
     }
 
-
     body {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     h1, h2, h3 {
-        font-size: 90%;
+        font-size: 95%;
     }
 
     p, span, a, li, label, input, button {
-        font-size: 0.875rem;
+        font-size: 0.95rem;
     }
 
-    .botao {
-        font-size: 0;
-        background: none;
-        border: none;
-        box-shadow: none;
+    /* Title and search alignment */
+    .topo h1 {
+        font-size: 34px;
+        margin: 12px 0 8px 0;
+        line-height: 1.02;
+        font-weight: 700;
+        letter-spacing: 0;
+        font-family: var(--font-secondary);
+    }
+
+    .barra-pesquisa {
+        width: 240px;
+        height: 38px;
+        align-items: center;
+        margin-left: 14px;
+    }
+
+    .barra-pesquisa input { height: 28px; }
+
+    /* Buttons sizing */
+    .botoes button {
+        height: 36px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* Filter button -> icon-only on tablet */
+    .botoes button:nth-child(3) {
+        font-size: 0; /* hides text */
+        width: 44px;
         padding: 0;
-        width: auto;
-    }
-
-    .botao i {
-        font-size: 1.4rem;
-    }
-
-     .input-busca   {
-        width: 180px;
-        height: 40px;
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
-   
-}
-
-
-@media (max-width: 599px) {
-    body.layout {
-        flex-direction: column;
+    .botoes button:nth-child(3) i {
+        font-size: 18px;
+        color: #000;
     }
 
-    .menu-lateral {
+    /* remover qualquer fundo vinho do ícone de filtro e deixar apenas o ícone */
+    .botoes button:nth-child(3) {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: #3b3b3b;
+    }
+
+    /* espaçamento geral do cabeçalho */
+    .topo { margin-top: 8px; margin-left: 6px; gap: 16px; }
+    .topo h1 { margin-right: 8px; }
+    .barra-pesquisa { margin-right: 12px; }
+
+    /* Place the filter icon flush to the top-right of the table area */
+    .secao-tabela {
+        position: relative;
+    }
+
+    .botoes {
+        position: relative;
         width: 100%;
-        height: 150px;
-        min-height: auto;
-        border-radius: 0 0 20px 20px;
-        
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-right: 0;
     }
 
-    .menu-lista{
-        visibility: hidden;
-    }
-    
-    .menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    padding: 20px 16px;
-}
-
-    .menu-container > img {
-        width: 112px;
-        height: 112px;
-        margin-top: 3px;
-    }
-
-    .menu-container i {
+    .botoes button:nth-child(3) {
         position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 3rem;
+        right: 0;
+        top: 18px;
+        z-index: 2;
     }
 
+    /* Header tweaks for tablet: reduce top spacing, align title and search */
+    .header { margin-left: 8px; }
+    .topo { margin-top: 12px; margin-left: 0; gap: 12px; align-items: center; }
+    .topo h1 { font-size: 24px; margin: 0; }
+    .barra-pesquisa { margin-left: auto; }
+    .topo .barra-pesquisa { order: 2; }
+    .topo h1 { order: 1; }
 
-    .conteudo {
-        padding: 24px 16px;
-    }
+    /* Make logo slightly smaller on tablet to match design */
+    .logo > img { max-width: 110px; height: auto; }
 
-    .cabecalho {
-        margin-bottom: 30px;
-    }
+    /* Slightly smaller menu icon */
+    .menu-icon { font-size: 28px; }
 
-    .titulo-pagina {
-        font-size: 20px;;
-    }
-
-    .input-busca   {
-        width: 130px;
-        height: 40px;
-        display: inline-flex;
-    }
-
-    .filtros {
-        flex-direction: row;
-        gap: 40px;
-
-    }
-
-    .acoes {
-        margin-top: 16px;     
-        justify-content: flex-end;
-        margin-top: -20px;
-        gap: 0.1px
-    }
-
-    .botao-sair {
-        width: 100%;
-        max-width: 320px;
-        visibility: hidden;
-    }
-
-    .input {
-        max-width: 100%;
-    }
-
-    .botao {
-        font-size: 0;
-        background: none;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        width: auto;
-    }
-
-    .botao i {
-        font-size: 1.4rem;
-    }
-
-    .secao-tabela-fun-alu {
-        width: 100%;
-        overflow-x: auto; 
-    }
-
-    .tabela-funcionarios-alunos {
-        width: 100%;
-        font-size: 0.75rem; 
-    }
-
-    .tabela-funcionarios-alunos th,
-    .tabela-funcionarios-alunos td {
-        padding: 6px 8px; 
-    }
-
-
-
+    /* Buttons group align left under title (no extra left margin) */
+    .botoes { margin-left: 8px; }
 }
+
+
+
+
+
