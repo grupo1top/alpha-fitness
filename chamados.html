@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Fitness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <body>
+	<div class="layout">
+		<div class="esquerda">
+            <i class="bi bi-list menu-icon"></i>
+			<div class="logo">
+				<img class="logo-marca" src="img/ChatGPT Image 26 de mar. de 2026, 15_57_00 2.png" alt="Logo Alpha Fitness" />
+			</div>
+
+			<a href="home.html">Home</a>
+			<a href="lista-funcionarios.html">Lista de Funcionários</a>
+			<a href="lista-alunos.html">Lista de alunos</a>
+			<a href="inventario-patrimonios.html">Inventário de patrimônios</a>
+			<a href="chamados.html" class="ativo">Chamados</a>
+			<a href="dashboard-financas.html">Finanças</a>
+            <a href="folha-pagamento.html">Folha de Pagamento</a>
+
+			<button class="botao-sair">SAIR</button>
+		</div>
+
+		<div class="direita chamados-direita">
+			<header class="cabecalho-conteudo">
+				<h1>Chamados</h1>
+
+				<div class="abas" role="tablist" aria-label="Alternar visualização">
+					<button class="aba ativo" data-target="formSection" role="tab" aria-selected="true">Fazer chamado</button>
+					<button class="aba" data-target="historySection" role="tab" aria-selected="false">Histórico</button>
+				</div>
+			</header>
+
+			<section class="painel" id="formSection">
+				<p class="texto-ajuda">Preencha os dados da solicitação</p>
+
+				<form class="formulario-chamado">
+					<label for="tipo">Tipo de chamado</label>
+					<select id="tipo">
+						<option value="" selected disabled>Ex: Manutenção</option>
+						<option>Manutenção</option>
+						<option>Limpeza</option>
+						<option>Compras</option>
+					</select>
+
+					<label for="local">Local / Setor</label>
+					<input id="local" type="text" placeholder="Academia" />
+
+					<label for="descricao">Descrição</label>
+					<textarea id="descricao" rows="2" placeholder="Descreva o problema..."></textarea>
+
+					<label for="prioridade">Prioridade (opcional)</label>
+					<select id="prioridade">
+						<option value="" selected disabled>Ex: Média</option>
+						<option>Alta</option>
+						<option>Média</option>
+						<option>Baixa</option>
+					</select>
+
+					<button type="button" class="botao-principal">ABRIR CHAMADO</button>
+				</form>
+			</section>
+
+			<section class="painel escondido" id="historySection">
+				<p class="texto-ajuda">Histórico de chamados</p>
+
+				<div class="container-tabela">
+					<table>
+						<thead>
+							<tr>
+								<th>Tipo</th>
+								<th>Local</th>
+								<th>Prioridade</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>Manutenção</td><td>Sala 2</td><td>Alta</td><td><span class="status pendente"></span>Pendente</td></tr>
+							<tr><td>Limpeza</td><td>Recepção</td><td>Média</td><td><span class="status andamento"></span>Em andamento</td></tr>
+							<tr><td>Compras</td><td>Cozinha</td><td>Baixa</td><td><span class="status concluido"></span>Concluído</td></tr>
+							<tr><td>Limpeza</td><td>Vestiário</td><td>Alta</td><td><span class="status pendente"></span>Pendente</td></tr>
+							<tr><td>Compras</td><td>Sala 1</td><td>Baixa</td><td><span class="status concluido"></span>Concluído</td></tr>
+							<tr><td>Compras</td><td>Escritório</td><td>Média</td><td><span class="status pendente"></span>Pendente</td></tr>
+							<tr><td>Manutenção</td><td>Escritório</td><td>Média</td><td><span class="status concluido"></span>Concluído</td></tr>
+							<tr><td>Limpeza</td><td>Sala 1</td><td>Baixa</td><td><span class="status concluido"></span>Concluído</td></tr>
+							<tr><td>Manutenção</td><td>Escritório</td><td>Alta</td><td><span class="status pendente"></span>Pendente</td></tr>
+							<tr><td>Limpeza</td><td>Cozinha</td><td>Baixa</td><td><span class="status andamento"></span>Em andamento</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="scripts.js"></script>
 </body>
 </html>

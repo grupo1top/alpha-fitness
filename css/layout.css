@@ -258,8 +258,8 @@ button{
 
 .layout{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 100vh;
+    grid-template-columns: 260px 1fr; /* barra lateral fixa + conteúdo flexível */
+    min-height: 100vh;
 }
 
 .esquerda {
@@ -268,27 +268,23 @@ button{
     flex-direction: column;
     border-radius: 0 20px 20px 0;
     height: 100vh;
+    width: 260px;
+    padding: 24px 16px; /* espaço interno para ícone e logo */
 }
 
 .direita {
     background-color: var(--bg-color);
     overflow-y: auto;
+    padding: 40px; /* espaço consistente em todas as páginas */
+}
+
+.chamados-direita {
+    padding-left: 2%;
+    margin-top: 50px;
 }
 
 
-
-
-.layout{
-    display: grid;
-    flex-direction: row; 
-    grid-template-columns: 1fr 4fr; 
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.layout{display:grid;} /* kept for compatibility */
 
 body.layout {
     display: flex;
