@@ -244,6 +244,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button{
     display: flex;
 
@@ -255,6 +256,7 @@ button{
     font-family: var(--font-family);
 
 }
+
 
 .layout{
     display: grid;

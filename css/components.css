@@ -216,16 +216,6 @@
 
 /* lista de alunos  */
 
-
-.menu-lista {
-    list-style: none;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .menu-container {
     display: flex;
     gap: 10px;
