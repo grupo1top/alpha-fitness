@@ -398,3 +398,241 @@
 
 
 
+@media (min-width: 900px) {
+    .home-header {
+        height: 140px;
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    .home-pesquisa {
+        width: 280px;
+        padding: 12px 24px;
+    }
+
+    .home-pesquisa input {
+        font-size: 14px;
+    }
+
+    .home-header-logo {
+        width: 130px;
+    }
+
+    .home-sair {
+        font-size: 26px;
+        padding: 8px 12px;
+    }
+
+    .body-home {
+        width: calc(100% - 80px);
+        max-width: 1240px;
+        padding: 48px;
+        margin: 24px auto 0;
+        min-height: calc(100vh - 190px);
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 28px;
+        min-height: 160px;
+    }
+
+    .home-card i {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .home-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .home-card p {
+        font-size: 15px;
+    }
+}
+
+
+/* TABLET (600px - 899px)
+   ──────────────────────
+   Layout médio com adaptação para 2 colunas.
+   Header compactado, cards menores, espaçamento reduzido.
+*/
+@media (min-width: 600px) and (max-width: 899px) {
+    .home-header {
+        height: 110px;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .home-pesquisa {
+        width: 220px;
+        padding: 10px 18px;
+        gap: 8px;
+    }
+
+    .home-pesquisa i {
+        font-size: 18px;
+    }
+
+    .home-pesquisa input {
+        font-size: 13px;
+    }
+
+    .home-pesquisa input::placeholder {
+        font-size: 13px;
+    }
+
+    .home-header-logo {
+        width: 100px;
+    }
+
+    .home-sair {
+        font-size: 22px;
+        padding: 6px 10px;
+    }
+
+    .body-home {
+        width: calc(100% - 40px);
+        max-width: 900px;
+        padding: 32px 24px;
+        margin: 16px auto 0;
+        min-height: calc(100vh - 160px);
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 20px;
+        min-height: 180px;
+    }
+
+    .home-card i {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .home-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .home-card p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+
+/* MOBILE (<= 599px)
+   ─────────────────
+   Layout mobile otimizado para uma coluna.
+   Header vertical compacto, cards full-width, espaçamento mínimo.
+*/
+@media (max-width: 599px) {
+    .home-header {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .home-pesquisa {
+        width: 100%;
+        padding: 10px 16px;
+        gap: 10px;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .home-pesquisa i {
+        font-size: 16px;
+    }
+
+    .home-pesquisa input {
+        font-size: 14px;
+    }
+
+    .home-pesquisa input::placeholder {
+        font-size: 14px;
+    }
+
+    .home-header-logo {
+        width: 80px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        order: 1;
+        margin-bottom: 4px;
+    }
+
+    .home-sair {
+        font-size: 20px;
+        order: 3;
+        padding: 6px;
+        margin: 4px auto 0;
+    }
+
+    .body-home {
+        width: calc(100% - 32px);
+        max-width: 100%;
+        padding: 20px 16px;
+        margin: 12px auto 0;
+        min-height: auto;
+        border-radius: 12px;
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 18px;
+        min-height: 120px;
+        border-radius: 12px;
+    }
+
+    .home-card i {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .home-card h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .home-card p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .home-card:active {
+        transform: translateY(-1px);
+    }
+}
+
