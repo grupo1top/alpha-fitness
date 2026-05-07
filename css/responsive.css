@@ -110,6 +110,32 @@
     .barra-pesquisa i {
         font-size: 0.9rem;
     }
+
+     /*chamados*/
+
+     .chamados-direita .cabecalho-conteudo h1 {
+        font-size: 1.5rem;
+    }
+
+    .aba {
+        font-size: 0.8rem;
+        width: 130px;
+        height: 30px;
+    }
+
+    
+    .formulario-chamado {
+        max-width: 100%;
+    }
+
+    .formulario-chamado .botao-principal {
+        width: 150px;
+        height: 30px;
+    }
+
+
+    
+
 }
 
 
@@ -289,5 +315,86 @@
     .barra-pesquisa i {
         font-size: 0.9rem;
     }
+
+
+    /*chamados*/
+
+   .chamados-direita {
+        padding: 20px 16px;
+        gap: 16px;
+    }
+
+    .cabecalho-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .cabecalho-conteudo h1 {
+        font-size: 1.4rem;
+    }
+
+    
+    .abas {
+        width: 250px;
+        height: 40px;
+    }
+
+    .aba {
+        flex: 1;
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 0.8rem;
+
+        width: 250px;
+        height: 34px;
+    }
+
+    
+    .painel {
+        padding: 18px 14px;
+        border-radius: 12px;
+    }
+
+    
+    .formulario-chamado {
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    .formulario-chamado select,
+    .formulario-chamado input,
+    .formulario-chamado textarea {
+        font-size: 0.875rem;
+        padding: 9px 12px;
+    }
+
+    .botao-principal {
+        font-size: 0.875rem;
+        padding: 12px;
+    }
+
+    
+    .container-tabela {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .container-tabela table {
+        font-size: 0.78rem;
+        min-width: 400px;
+    }
+
+    .container-tabela th,
+    .container-tabela td {
+        padding: 9px 10px;
+    }
 }
+    
+    
+
+
+
+
+
 
