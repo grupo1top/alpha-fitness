@@ -259,8 +259,7 @@ button{
 
 
 .layout{
-    display: grid;
-    grid-template-columns: 260px 1fr; /* barra lateral fixa + conteúdo flexível */
+ /* barra lateral fixa + conteúdo flexível */
     min-height: 100vh;
 }
 
@@ -278,6 +277,7 @@ button{
     background-color: var(--bg-color);
     overflow-y: auto;
     padding: 40px; /* espaço consistente em todas as páginas */
+    margin-left: 260px;
 }
 
 .chamados-direita {
