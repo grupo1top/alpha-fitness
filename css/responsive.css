@@ -50,7 +50,30 @@
         display: inline-flex;
     }
 
-    /*inventario de patrimonios*/
+    /* Mantém o menu lateral visível no tablet e ocupa toda a altura */
+    .esquerda {
+        width: 240px;
+        top: 0;
+        bottom: 0;
+        height: auto; /* usa top/bottom para garantir que chegue ao final */
+        min-height: 100vh !important;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+    }
+
+    .esquerda a {
+        display: block !important;
+    }
+
+    .botao-sair {
+        visibility: visible;
+    }
+
+    /* ajustar conteúdo principal para não ficar por baixo da sidebar */
+    .direita {
+        margin-left: 240px;
+    }
     
     .secao-tabela {
         margin-left: -20px;
@@ -119,11 +142,19 @@
         min-height: auto;
         border-radius: 0 0 20px 20px;
         align-items: flex-start; 
-        padding-top: 10px
+        padding-top: 10px;
+        overflow: hidden;
+        transition: height 0.3s ease;
     }
 
     .esquerda {
         position: static;
+    }
+
+    .esquerda.menu-aberto {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
     }
     
 
@@ -142,6 +173,10 @@
     }
     .esquerda a {
         display: none;
+    }
+
+    .esquerda.menu-aberto a {
+        display: block;
     }
 
     .esquerda i {
@@ -185,6 +220,10 @@
         width: 100%;
         max-width: 320px;
         visibility: hidden;
+    }
+
+    .esquerda.menu-aberto .botao-sair {
+        visibility: visible;
     }
 
     .input {
@@ -235,6 +274,32 @@
         margin-top: -50px;
         padding-top: 0px;
         
+    }
+
+    .esquerda {
+        height: 150px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .esquerda.menu-aberto {
+        height: 100vh;
+    }
+
+    .esquerda a {
+        display: none !important;
+    }
+
+    .esquerda.menu-aberto a {
+        display: block !important;
+    }
+
+    .botao-sair {
+        visibility: hidden;
+    }
+
+    .esquerda.menu-aberto .botao-sair {
+        visibility: visible;
     }
 
     .direita .header h1 {
