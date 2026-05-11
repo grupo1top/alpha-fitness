@@ -239,6 +239,7 @@
 
     .direita .header h1 {
         margin-left: -60px;
+        font-family: var(--font-family);
     }
 
     .secao-tabela {
@@ -279,6 +280,7 @@
     }
     .topo h1 {
         font-size: 25px;
+        font-family: var(--font-family);
     }
 
     
