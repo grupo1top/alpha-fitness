@@ -393,3 +393,596 @@
         overflow-x: hidden;
     }
 }
+/*lista de alunos e funcionarios*/
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .esquerda {
+        width: 240px;
+    }
+    
+
+    .direita > .cabecalho, .acoes {
+        margin-left: -40px;
+    }
+
+    .secao-tabela-fun-alu {
+        margin-left: -10px;
+    }
+
+    .cabecalho > h1 {
+        font-size: 35px;
+    }
+
+    .botao-sair {
+        width: 200px;
+        font-size: 17px;
+    }
+
+    .filtros {
+        gap: 24px;
+    }
+
+
+    body {
+        font-size: 14px;
+    }
+
+    h2, h3 {
+        font-size: 90%;
+    }
+
+    p, span, a, li, label, input, button {
+        font-size: 0.875rem;
+    }
+
+    .botao i {
+        font-size: 1.4rem;
+    }
+
+     .input-busca   {
+        width: 180px;
+        height: 40px;
+        display: inline-flex;
+    }
+
+    /* Mantém o menu lateral visível no tablet e ocupa toda a altura */
+    .esquerda {
+        width: 240px;
+        top: 0;
+        bottom: 0;
+        height: auto; /* usa top/bottom para garantir que chegue ao final */
+        min-height: 100vh !important;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+    }
+
+    .esquerda a {
+        display: block !important;
+    }
+
+    .botao-sair {
+        visibility: visible;
+    }
+
+    /* ajustar conteúdo principal para não ficar por baixo da sidebar */
+    .direita {
+        margin-left: 240px;
+    }
+    
+    .secao-tabela {
+        margin-left: -20px;
+    }
+   
+    .botoes {
+        margin-left: -40px;
+
+    }
+
+    .botoes > button {
+        width: 210px;
+        height: 27px;
+        font-family: 11px;
+    }
+
+    button  i {
+        font-size: 0.9rem;
+    }
+
+    .btn-filtrar {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+    color: transparent;
+}
+
+    .btn-filtrar i {
+        color: #000; 
+        font-size: 1rem;
+    }
+
+    .topo {
+        font-size: 35px;
+        margin-left: -40px;
+        margin-bottom: 30px;
+    }
+
+    .barra-pesquisa{
+        margin-right: 20px;
+        width: 327px;
+        height: 35px;
+        font-size: 5px;
+    }
+
+    .barra-pesquisa i {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 599px) {
+    body.layout {
+        flex-direction: column;
+    }
+    .layout {
+        grid-template-columns: 1fr; /* vira uma coluna só */
+    }
+
+
+    .esquerda {
+        width: 100%;
+        height: 150px;
+        min-height: auto;
+        border-radius: 0 0 20px 20px;
+        align-items: flex-start; 
+        padding-top: 10px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .esquerda {
+        position: static;
+    }
+
+    .esquerda.menu-aberto {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    
+
+    .esquerda > img {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .direita {
+        margin-left: 0px;
+    }
+
+    .direita a {
+        display: none;
+    }
+    .esquerda a {
+        display: none;
+    }
+
+    .esquerda.menu-aberto a {
+        display: block;
+    }
+
+    .esquerda i {
+        position: absolute;
+        right: 16px;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        align-items: flex-end; 
+        padding-top: 120px
+    }
+
+    .cabecalho {
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-pagina {
+        font-size: 25px;;
+    }
+
+    .input-busca   {
+        width: 130px;
+        height: 40px;
+        display: inline-flex;
+    }
+
+    .filtros {
+        flex-direction: row;
+        gap: 40px;
+
+    }
+
+    .acoes {
+        margin-top: 16px;     
+        justify-content: flex-end;
+        margin-top: -20px;
+        gap: 0.1px;
+    }
+
+    .botao-sair {
+        width: 100%;
+        max-width: 320px;
+        visibility: hidden;
+    }
+
+    .esquerda.menu-aberto .botao-sair {
+        visibility: visible;
+    }
+
+    .input {
+        max-width: 100%;
+        width: 100px;
+        height: 30px;
+    }
+
+    .botao {
+        font-size: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .botao i {
+        font-size: 1.0rem;
+        
+    }
+
+    .secao-tabela-fun-alu {
+        width: 100%;
+        overflow-x: auto; 
+    }
+
+    .tabela-funcionarios-alunos {
+        width: 100%;
+        font-size: 0.75rem; 
+        border-collapse: collapse;
+        white-space: nowrap; 
+    }
+
+    .tabela-funcionarios-alunos {
+    min-width: 600px; 
+}
+
+
+    .tabela-funcionarios-alunos th,
+    .tabela-funcionarios-alunos td {
+        padding: 6px 10px; 
+    }
+
+
+    /*inventario*/
+     .direita  .header {
+        margin-top: -50px;
+        padding-top: 0px;
+        
+    }
+
+    .esquerda {
+        height: 150px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .esquerda.menu-aberto {
+        height: 100vh;
+    }
+
+    .esquerda a {
+        display: none !important;
+    }
+
+    .esquerda.menu-aberto a {
+        display: block !important;
+    }
+
+    .botao-sair {
+        visibility: hidden;
+    }
+
+    .esquerda.menu-aberto .botao-sair {
+        visibility: visible;
+    }
+
+    .direita .header h1 {
+        margin-left: -60px;
+        font-family: var(--font-family);
+    }
+
+    .secao-tabela {
+        margin-left: 0px;
+        width: 100%;
+        margin-left: -30px;
+    }
+
+    .botoes {
+        margin-left: -40px;
+
+    }
+
+    .botoes > button {
+        width: 100%;
+        max-width: 180px;
+        height: 32px;
+        font-size: 11px;
+    }
+
+    button i {
+        font-size: 0.9rem;
+    }
+
+    .btn-filtrar {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+    color: transparent;
+}
+
+    .btn-filtrar i {
+        color: #000; 
+        font-size: 1rem;
+        margin-left: -70px;
+    }
+    .topo h1 {
+        font-size: 25px;
+        font-family: var(--font-family);
+    }
+
+    
+    .barra-pesquisa {
+        width: 100%;
+        max-width: 280px;
+        height: 35px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .barra-pesquisa i {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .home-header {
+        height: 140px;
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    .home-pesquisa {
+        width: 280px;
+        padding: 12px 24px;
+    }
+
+    .home-pesquisa input {
+        font-size: 14px;
+    }
+
+    .home-header-logo {
+        width: 130px;
+    }
+
+    .home-sair {
+        font-size: 26px;
+        padding: 8px 12px;
+    }
+
+    .body-home {
+        width: calc(100% - 80px);
+        max-width: 1240px;
+        padding: 48px;
+        margin: 24px auto 0;
+        min-height: calc(100vh - 190px);
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 28px;
+        min-height: 160px;
+    }
+
+    .home-card i {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .home-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .home-card p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .home-header {
+        height: 110px;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .home-pesquisa {
+        width: 220px;
+        padding: 10px 18px;
+        gap: 8px;
+    }
+
+    .home-pesquisa i {
+        font-size: 18px;
+    }
+
+    .home-pesquisa input {
+        font-size: 13px;
+    }
+
+    .home-pesquisa input::placeholder {
+        font-size: 13px;
+    }
+
+    .home-header-logo {
+        width: 100px;
+    }
+
+    .home-sair {
+        font-size: 22px;
+        padding: 6px 10px;
+    }
+
+    .body-home {
+        width: calc(100% - 40px);
+        max-width: 900px;
+        padding: 32px 24px;
+        margin: 16px auto 0;
+        min-height: calc(100vh - 160px);
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 20px;
+        min-height: 180px;
+    }
+
+    .home-card i {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .home-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .home-card p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+
+@media (max-width: 599px) {
+    .home-header {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .home-pesquisa {
+        width: 100%;
+        padding: 10px 16px;
+        gap: 10px;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .home-pesquisa i {
+        font-size: 16px;
+    }
+
+    .home-pesquisa input {
+        font-size: 14px;
+    }
+
+    .home-pesquisa input::placeholder {
+        font-size: 14px;
+    }
+
+    .home-header-logo {
+        width: 80px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        order: 1;
+        margin-bottom: 4px;
+    }
+
+    .home-sair {
+        font-size: 20px;
+        order: 3;
+        padding: 6px;
+        margin: 4px auto 0;
+    }
+
+    .body-home {
+        width: calc(100% - 32px);
+        max-width: 100%;
+        padding: 20px 16px;
+        margin: 12px auto 0;
+        min-height: auto;
+        border-radius: 12px;
+    }
+
+    .home-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .home-card {
+        padding: 18px;
+        min-height: 120px;
+        border-radius: 12px;
+    }
+
+    .home-card i {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .home-card h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .home-card p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .home-card:active {
+        transform: translateY(-1px);
+    }
+}
+

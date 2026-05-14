@@ -9,29 +9,27 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+<body>
+        <div class="esquerda">
+            <i class="bi bi-list menu-icon"></i>
+            <div class="logo">
+                <img src="img/ChatGPT Image 26 de mar. de 2026, 15_57_00 2.png" alt="logo-alpha">
+            </div>
+           
+            <a href="home.html">Home</a>
+            <a href="lista-funcionarios.html">Lista de Funcionários</a>
+            <a href="lista-alunos.html">Lista de Alunos</a>
+            <a href="inventario-patrimonios.html">Inventário</a>
+            <a href="chamados.html">Chamados</a>
+            <a href="dashboard-financas.html">Finanças</a>
+            <a href="folha-pagamento.html">Folha de pagamento</a>
 
-<body class="layout">
-
-    <nav class="menu-lateral">
-        <div class="menu-container">
-            <img src="img/ChatGPT Image 26 de mar. de 2026, 15_57_00 2.png" alt="logo-alpha">
-
-            <ul class="menu-lista">
-                <li class="menu-item" href="index.html">Home</li>
-                <li class="menu-item ativo" href="lista-funcionarios.html">Lista de Funcionários</li>
-                <li class="menu-item" href="lista-alunos.html">Lista de Alunos</li>
-                <li class="menu-item" href="inventario-patrimonios.html">Inventários</li>
-                <li class="menu-item" href="chamados.html">Chamados</li>
-                <li class="menu-item" href="dashboard-financas.html">Finanças</li>
-                <li class="menu-item" href="folha-pagamento.html">Folha de pagamento</li>
-            </ul>
-
-            <button class="botao botao-sair">SAIR</button>
+            <button type="button" class="botao botao-sair">SAIR</button>
         </div>
-    </nav>
 
-    <main class="conteudo">
+        <div class="direita">
 
         
         <header class="cabecalho">
@@ -63,7 +61,7 @@
         <section class="acoes">
             <button class="botao remover">
                 Remover funcionário
-                <i class="bi bi-plus-circle-fill"></i>
+                <i class="bi bi-dash-circle-fill"></i>
             </button>
             <button class="botao adicionar">
                 Adicionar funcionário
@@ -141,7 +139,9 @@
     </tr>
 </table>
 </section>
+        </div>
+    </div>
 
-   
+    <script src="js/scripts.js"></script>
 </body>
 </html>
