@@ -1,25 +1,18 @@
-````markdown
 # 🏋️ Alpha Fitness
 
-Projeto desenvolvido durante as aulas de Front-End no curso Técnico em Desenvolvimento de Sistemas do SENAI Jundiaí.
+> Projeto desenvolvido durante as aulas de Front-End no curso Técnico em Desenvolvimento de Sistemas do SENAI Jundiaí.
 
 ---
 
-# 📚 Sobre o Projeto
+## 📚 Sobre o Projeto
 
 O **Alpha Fitness** é um sistema voltado para academias e centros fitness, desenvolvido inicialmente como um projeto Front-End educacional durante as aulas ministradas pelo professor Thiago no curso Técnico em Desenvolvimento de Sistemas do SENAI Jundiaí.
 
 O projeto surgiu com o objetivo de praticar conceitos de desenvolvimento web moderno, organização de interfaces e experiência do usuário, evoluindo posteriormente para a ideia de um sistema mais completo no modelo **ERP (Enterprise Resource Planning)** voltado para o segmento fitness.
 
-O repositório oficial do projeto está disponível no GitHub:
-
-```bash
-https://github.com/grupo1top/alpha-fitness
-```
-
 ---
 
-# 🧠 O que é o Alpha Fitness?
+## 🧠 O que é o Alpha Fitness?
 
 O Alpha Fitness começou como um protótipo visual de sistema para academias, mas sua proposta vai além de apenas uma interface.
 
@@ -49,7 +42,7 @@ No contexto do Alpha Fitness, o sistema tende a integrar:
 
 ---
 
-# 🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 O objetivo do Alpha Fitness é unir:
 
@@ -67,15 +60,12 @@ Além do aprendizado técnico, o projeto também busca simular um sistema real u
 
 # 🖥️ Tecnologias Trabalhadas
 
-Durante o desenvolvimento do projeto nas aulas de Front-End, foram utilizados conceitos relacionados a:
-
 ## 🌐 Front-End
 
 - HTML5
 - CSS3
 - JavaScript
 - Responsividade
-- Estruturação semântica
 - Flexbox
 - Grid Layout
 
@@ -89,13 +79,13 @@ Com a evolução do projeto para ERP, a proposta inclui utilização de:
 - FastAPI
 - Banco de Dados SQL
 - APIs REST
-- Autenticação de usuários
 - CRUD completo
+- Autenticação de usuários
 - Integração entre módulos
 
 ---
 
-# 📱 Interface do Sistema
+## 📱 Interface do Sistema
 
 O sistema foi pensado para possuir:
 
@@ -111,7 +101,7 @@ O sistema foi pensado para possuir:
 
 ## 👤 Gestão de Alunos
 
-- Cadastro
+- Cadastro de alunos
 - Histórico
 - Planos ativos
 - Frequência
@@ -121,7 +111,7 @@ O sistema foi pensado para possuir:
 
 ## 💳 Financeiro
 
-- Mensalidades
+- Controle de mensalidades
 - Controle de pagamentos
 - Relatórios financeiros
 - Controle de inadimplência
@@ -162,7 +152,7 @@ O projeto também possui um papel importante no aprendizado dos alunos do curso 
 
 Durante o desenvolvimento são trabalhados conceitos como:
 
-- Versionamento com Git/GitHub
+- Versionamento com Git e GitHub
 - Organização de projeto
 - Desenvolvimento em equipe
 - Estruturação de interfaces
@@ -172,8 +162,6 @@ Durante o desenvolvimento são trabalhados conceitos como:
 ---
 
 # 📂 Estrutura do Projeto
-
-Exemplo de organização:
 
 ```bash
 alpha-fitness/
@@ -215,14 +203,52 @@ Entre as futuras implementações planejadas estão:
 
 ---
 
+# 🛠️ Como Executar o Projeto
+
+## 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/grupo1top/alpha-fitness.git
+```
+
+---
+
+## 2️⃣ Acesse a pasta do projeto
+
+```bash
+cd alpha-fitness
+```
+
+---
+
+## 3️⃣ Execute o projeto
+
+Abra o arquivo:
+
+```bash
+index.html
+```
+
+ou utilize a extensão:
+
+```bash
+Live Server
+```
+
+no Visual Studio Code.
+
+---
+
 # 🤝 Desenvolvimento em Equipe
 
 Projeto desenvolvido por alunos do curso Técnico em Desenvolvimento de Sistemas do SENAI Jundiaí.
 
-GitHub do grupo:
+---
+
+# 🔗 Repositório Oficial
 
 ```bash
-https://github.com/grupo1top
+https://github.com/grupo1top/alpha-fitness
 ```
 
 ---
@@ -241,4 +267,3 @@ Além de aplicar conhecimentos de Front-End, o projeto abre caminho para evoluç
 - ERP corporativo
 
 A proposta principal é transformar o Alpha Fitness em uma solução moderna, organizada e escalável para academias e centros esportivos.
-````
